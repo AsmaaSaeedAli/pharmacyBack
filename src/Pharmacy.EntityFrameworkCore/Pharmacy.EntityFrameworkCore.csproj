@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <RootNamespace>Pharmacy</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20200404181658_Add_Customers.cs" />
+    <Compile Remove="Migrations\20200404181658_Add_Customers.Designer.cs" />
+    <Compile Remove="Migrations\20200404182325_Add_Customers.cs" />
+    <Compile Remove="Migrations\20200404182325_Add_Customers.Designer.cs" />
+    <Compile Remove="Migrations\20200417230930_items.cs" />
+    <Compile Remove="Migrations\20200417230930_items.Designer.cs" />
+    <Compile Remove="Migrations\20200417231645_items.cs" />
+    <Compile Remove="Migrations\20200417231645_items.Designer.cs" />
+    <Compile Remove="Migrations\20200417234043_items.cs" />
+    <Compile Remove="Migrations\20200417234043_items.Designer.cs" />
+    <Compile Remove="Migrations\20200418224435_full_items.cs" />
+    <Compile Remove="Migrations\20200418224435_full_items.Designer.cs" />
+    <Compile Remove="Migrations\20200418225718_items.cs" />
+    <Compile Remove="Migrations\20200418225718_items.Designer.cs" />
+    <Compile Remove="Migrations\20200418230434_full_items.cs" />
+    <Compile Remove="Migrations\20200418230434_full_items.Designer.cs" />
+    <Compile Remove="Migrations\20200420213843_update_itemprice_itemquantity.cs" />
+    <Compile Remove="Migrations\20200420213843_update_itemprice_itemquantity.Designer.cs" />
+    <Compile Remove="Migrations\20200829224624_Add_General_Category.cs" />
+    <Compile Remove="Migrations\20200829224624_Add_General_Category.Designer.cs" />
+    <Compile Remove="Migrations\20200829224838_Add_General_Category.cs" />
+    <Compile Remove="Migrations\20200829224838_Add_General_Category.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pharmacy.Core\Pharmacy.Core.csproj" />
+  </ItemGroup>
+</Project>

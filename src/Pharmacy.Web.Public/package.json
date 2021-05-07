@@ -40,7 +40,7 @@
     "tether": "^1.4.5",
     "timeago": "^1.6.4",
     "toastr": "^2.1.2",
-    "underscore": "^1.8.3"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "@types/node": "^11.13.0",

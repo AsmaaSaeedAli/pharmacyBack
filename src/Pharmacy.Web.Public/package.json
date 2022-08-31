@@ -28,7 +28,7 @@
     "json2": "*",
     "jstree": "^3.3.1",
     "moment": "^2.20.1",
-    "moment-timezone": "^0.5.14",
+    "moment-timezone": "^0.5.35",
     "morris.js": "^0.5.0",
     "mustache": "^3.0.1",
     "owl.carousel": "^2.2.1",
